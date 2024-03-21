@@ -9,8 +9,8 @@ part of 'ingredient_category_entity.dart';
 IngredientCategoryEntity _$IngredientCategoryEntityFromJson(
         Map<String, dynamic> json) =>
     IngredientCategoryEntity(
-      id: json['id'] as String,
-      name: json['name'] as String?,
+      id: json['id'] as String?,
+      name: json['name'] as String,
     );
 
 Map<String, dynamic> _$IngredientCategoryEntityToJson(

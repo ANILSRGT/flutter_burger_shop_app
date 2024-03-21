@@ -5,12 +5,12 @@ part 'auth_entity.g.dart';
 
 @JsonSerializable(fieldRename: FieldRename.snake)
 final class AuthEntity with EquatableMixin {
-  @JsonKey(name: 'id')
-  final String id;
-
   AuthEntity({
     required this.id,
   });
+
+  @JsonKey(name: 'id')
+  final String id;
 
   @override
   List<Object?> get props => [id];

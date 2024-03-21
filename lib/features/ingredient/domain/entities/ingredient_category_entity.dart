@@ -6,18 +6,18 @@ part 'ingredient_category_entity.g.dart';
 @JsonSerializable(fieldRename: FieldRename.snake)
 final class IngredientCategoryEntity with EquatableMixin {
   IngredientCategoryEntity({
-    required this.id,
+    this.id,
     required this.name,
   });
 
   @JsonKey(name: 'id')
-  final String id;
+  final String? id;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @override
-  List<Object?> get props => [id];
+  List<Object?> get props => [id, name];
 
   factory IngredientCategoryEntity.fromJson(Map<String, dynamic> json) =>
       _$IngredientCategoryEntityFromJson(json);
