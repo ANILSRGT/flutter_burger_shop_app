@@ -5,6 +5,6 @@ import 'package:flutter_burger_shop_app/app/styles/itheme.dart';
 import 'package:flutter_burger_shop_app/presentation/blocs/theme/theme_cubit.dart';
 
 extension ThemeContextExtensions on BuildContext {
-  AppColors get colors =>
+  AppColors colors() =>
       watch<ThemeCubit>().state.currentTheme.appColorsFromMode(this);
 }

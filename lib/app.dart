@@ -29,10 +29,10 @@ class MyApp extends StatelessWidget {
             child: SafeArea(
               child: StyledToast(
                 locale: const Locale('en', 'US'),
-                backgroundColor: context.colors.primary.color,
+                backgroundColor: context.colors().primary.color,
                 textStyle: context.ext.theme.textTheme.bodyMedium?.copyWith(
                   fontWeight: FontWeight.w500,
-                  color: context.colors.primary.onColor,
+                  color: context.colors().primary.onColor,
                 ),
                 toastAnimation: StyledToastAnimation.fade,
                 reverseAnimation: StyledToastAnimation.fade,

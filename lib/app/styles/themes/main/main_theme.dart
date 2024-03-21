@@ -6,7 +6,7 @@ import 'package:flutter_burger_shop_app/app/styles/themes/main/main_theme_theme_
 
 final class MainTheme extends ITheme {
   @override
-  ThemeData data(bool isDark) => MainThemeThemeData(isDark).data;
+  ThemeData data(bool isDark) => MainThemeThemeData(isDark).data();
 
   @override
   AppColors colors(bool isDark) => MainThemeAppColors(isDark);

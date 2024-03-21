@@ -43,7 +43,7 @@ class _AuthPageState extends BasePageState<AuthPage> with AuthPageMixin {
     return Container(
       height: context.ext.screen.height * 0.15,
       decoration: BoxDecoration(
-        color: context.colors.primary.color,
+        color: context.colors().primary.color,
         borderRadius: context.ext.radius.borderRadiusOnlyBottomXL,
       ),
       child: Center(
@@ -72,7 +72,7 @@ class _AuthPageState extends BasePageState<AuthPage> with AuthPageMixin {
               'Burger Shop',
               style: context.ext.theme.textTheme.headlineLarge?.copyWith(
                 fontWeight: FontWeight.bold,
-                color: context.colors.primary.onColor,
+                color: context.colors().primary.onColor,
               ),
             ),
           ],
